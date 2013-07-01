@@ -1,5 +1,5 @@
-# Script = script_17_01.rb
-# Description = command line optiones using "optparse"
+# Script = script_18_06.rb
+# Description = command line optiones using "trollop"
 # Name = Konstantin Kisly
 # EMail = kisly.k@gmail.com
 require 'trollop'
@@ -33,6 +33,9 @@ numbers = []
  puts summary
  #a,b = summary.to_s.split(".")
  if b.to_i == 0 then summary = summary.to_i end
+ puts "=============================================================="
+ puts "Script: #{__FILE__}"
  puts "Average score of following numbers: #{opts[:first]}, #{opts[:second]}, etc is #{summary.to_f}"
+ puts "=============================================================="
 
  

@@ -1,5 +1,5 @@
-# Script = script_17_01.rb
-# Description = command line optiones using "optparse"
+# Script = script_18_05.rb
+# Description = command line optiones using "trollop"
 # Name = Konstantin Kisly
 # EMail = kisly.k@gmail.com
 require 'trollop'
@@ -11,4 +11,7 @@ opts = Trollop::options do
  opt :fourth, "fourth", :short => "-d", :type => :float
  opt :fifth, "fifth", :short => "-e", :type => :float
 end
- puts "Average score of #{opts[:first]},#{opts[:second]},#{opts[:third]},#{opts[:fourth]} and #{opts[:fifth]} = #{(opts[:first] + opts[:second] + opts[:third] + opts[:fourth] + opts[:fifth]) / 5}"
+puts "=============================================================="
+puts "Script: #{__FILE__}"
+puts "Average score of #{opts[:first]},#{opts[:second]},#{opts[:third]},#{opts[:fourth]} and #{opts[:fifth]} = #{(opts[:first] + opts[:second] + opts[:third] + opts[:fourth] + opts[:fifth]) / 5}"
+puts "=============================================================="
